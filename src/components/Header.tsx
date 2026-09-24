@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div>
           <div className="flex items-center space-x-2">
             <span className="font-semibold text-xs tracking-tight text-zinc-100">
-              SIH26159
+              SecureMailScope
             </span>
             <span className="text-[10px] text-zinc-400 font-mono">
               /

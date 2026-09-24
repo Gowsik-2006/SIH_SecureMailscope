@@ -201,7 +201,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span>Online</span>
           </span>
         </div>
-        <div className="text-[10px] text-zinc-600">SIH26159 v2.5.0 Production</div>
+        <div className="text-[10px] text-zinc-600">SecureMailScope v2.5.0 Production</div>
       </div>
     </aside>
   );

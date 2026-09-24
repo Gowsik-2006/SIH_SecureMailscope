@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="shield-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a1a1aa" />
+      <stop offset="100%" stop-color="#3f3f46" />
+    </linearGradient>
+    <linearGradient id="mail-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg-grad)" stroke="#27272a" stroke-width="2" />
+
+  <!-- Outer Security Shield -->
+  <path d="M32 9 L49 16 C49 32 39 46 32 53 C25 46 15 32 15 16 Z" 
+        fill="#18181b" 
+        stroke="url(#shield-stroke)" 
+        stroke-width="2.5" 
+        stroke-linejoin="round" />
+
+  <!-- Inner Mail Envelope -->
+  <rect x="23" y="24" width="18" height="13" rx="2" fill="#27272a" stroke="url(#mail-accent)" stroke-width="1.8" />
+  <!-- Envelope Flap -->
+  <path d="M23 25 L32 31.5 L41 25" fill="none" stroke="url(#mail-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Keyhole / Security Padlock Indicator -->
+  <circle cx="32" cy="42" r="2.2" fill="#f43f5e" />
+  <path d="M32 44.2 L32 47.5" stroke="#f43f5e" stroke-width="1.8" stroke-linecap="round" />
+</svg>
