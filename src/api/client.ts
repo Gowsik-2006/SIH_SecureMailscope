@@ -38,12 +38,21 @@ export class ApiClient {
     if (!res.ok) {
       let errorMsg = `HTTP Error ${res.status}`;
       try {
-        const errorJson = await res.json();
-        if (errorJson.error && errorJson.error.message) {
-          errorMsg = errorJson.error.message;
+        const text = await res.text();
+        try {
+          const errorJson = JSON.parse(text);
+          if (errorJson.error && errorJson.error.message) {
+            errorMsg = errorJson.error.message;
+          }
+        } catch {
+          if (res.status === 404) {
+            errorMsg = 'Backend API endpoint not found (404). Ensure Vercel serverless function or backend server is running.';
+          } else if (text && text.length < 150) {
+            errorMsg = text;
+          }
         }
       } catch {
-        // ignore json parse error
+        // ignore
       }
       throw new Error(errorMsg);
     }
