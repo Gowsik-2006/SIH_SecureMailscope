@@ -1,6 +1,8 @@
 {
-  "name": "SIH26159 Network Forensic & Threat Detection Platform",
+  "name": "SecureMailScope Network Forensic & Threat Detection Platform",
   "description": "Next-generation network forensic platform for email protocols (SMTP, IMAP, POP3) over TLS/STARTTLS, PCAP/PCAPNG parsing, cryptographic auditing, stripping detection, and verifiable AI risk explanation.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
